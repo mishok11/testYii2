@@ -14,5 +14,14 @@ class GeneratorController extends Controller
         return $this->render('index', ['model' => $genForm]);
 	}
 
+	public function actionMonth(){
+		
+		$monthForm = new Generator;
+		
+        
+        return  $this->render('month', ['model' => $monthForm]);;
+
+	}
+
 	
 }
