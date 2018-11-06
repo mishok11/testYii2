@@ -3,7 +3,5 @@
 
   use yii\base\Model;
 
-  class Generator extends Model{
-    
-   }
+class Generator extends Model{}
 

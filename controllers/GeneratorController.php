@@ -5,23 +5,15 @@
   use yii\data\Pagination;
   use app\models\Generator;
 
-class GeneratorController extends Controller
-{   
-	public function actionIndex()
-	{   
-		$genForm = new Generator();
-        
+class GeneratorController extends Controller {   
+	
+	public function actionIndex() {
+	    $genForm = new Generator();
         return $this->render('index', ['model' => $genForm]);
 	}
 
-	public function actionMonth(){
-		
+	public function actionMonth() {
 		$monthForm = new Generator;
-		
-        
-        return  $this->render('month', ['model' => $monthForm]);;
-
+		return  $this->render('month', ['model' => $monthForm]);;
 	}
-
-	
 }

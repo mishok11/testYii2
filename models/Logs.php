@@ -3,7 +3,5 @@
 
   use yii\db\ActiveRecord;
   
-  class Logs extends ActiveRecord{
-
-  	}
+class Logs extends ActiveRecord {}
 
