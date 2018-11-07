@@ -12,6 +12,6 @@
   ?>
 
   <?php $form = ActiveForm::begin(['action' => ['logs/index']]); ?>
-  <?= Html::dropDownList('month', 'null', app\controllers\TestHelpers::listMonth() ,array('prompt' => 'Оберіть місяць', 'options' => $options)); ?>
+  <?= Html::dropDownList('month', 'null', app\models\TestHelpers::listMonth() ,array('prompt' => 'Оберіть місяць', 'options' => $options)); ?>
   <?= Html::submitButton('Знайти', ['class' => 'btn btn-primary']); ?>
   <?php ActiveForm::end(); ?>
