@@ -54,7 +54,7 @@ $config = [
        */
     ],
     'params' => $params,
-    'defaultRoute'=> 'generator',
+    'defaultRoute'=> 'brackets',
 ];
 
 if (YII_ENV_DEV) {
