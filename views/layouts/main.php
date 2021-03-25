@@ -39,6 +39,19 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Test tasks',
+                'items' => [
+                    ['label' => 'ITMUM', 'url' => ['/logs']],
+                    ['label' => 'Brackets', 'url' => ['/brackets']],
+                    ['label' => 'New',
+                        'items' => [
+                            ['label' => 'item1', 'url' => ['/']],
+                            ['label' => 'item2', 'url' => ['/']],
+                        ]]
+                    ,
+                ]
+            ],
+
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
